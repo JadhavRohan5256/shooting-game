@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Shooting Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <canvas id="collisionCanvas">
+        This browser can't support canvas use latest browser
+    </canvas>
+    <canvas id="canvas">
+        This browser can't support canvas use latest browser
+    </canvas>
+    <div class="container">
+        <div class="score-container">
+            <h2 class="max-score">Max Score : 38</h2>
+            <h2 class="current-score">Score : 38</h2>
+        </div>
+        <div class="gear-container">
+            <i class="fa-solid fa-gear" id="gear"></i>
+        </div>
+    </div>
+    <div class="all-setting">
+        <div class="setting">
+            <div class="box-container">
+                <button id="start">New Game</button>
+            </div>
+            <div class="box-container">
+                <label for="mode">Dark Mode</label>
+                <input type="checkbox" name="mode" id="mode">
+            </div>
+            <div class="box-container">
+                <label for="mode">Bird Sound</label>
+                <input type="checkbox" name="bird-sound" id="bird-sound">
+            </div>
+            <div class="box-container">
+                <label for="sound">Shoot Sound</label>
+                <input type="checkbox" name="bird-sound" id="shoot-sound">
+            </div>
+            <div class="box-container">
+                <button id="done">Done</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
